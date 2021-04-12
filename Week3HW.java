@@ -9,13 +9,13 @@ public class Week3HW {
 		int[] ages = {3,9,23,64,2,8,28,93};
 		int firstAge = ages[0];
 		int lastAge = ages[ages.length-1];
-	//		System.out.println("Difference of ages: " + (lastAge - firstAge));
+			System.out.println("Difference of ages: " + (lastAge - firstAge));
 			
 		//Question 1b
 		int[] ages2 = {3,9,23,64,2,8,28,93,57};
 		int fAge = ages2[0];
 		int lAge = ages2[ages2.length-1];
-	//		System.out.println("Differences with add: " + (lAge - fAge));
+			System.out.println("Differences with add: " + (lAge - fAge));
 		
 		//Question 1c using array from 1b
 		int[] ages3 = {3,9,23,64,2,8,28,93,57};
@@ -23,7 +23,7 @@ public class Week3HW {
 		for (int age = 0; age < ages3.length; age++) {
 			sum = sum + ages3[age];
 		}
-//			System.out.println("The avrg age is: " + (double)sum / ages3.length);
+			System.out.println("The avrg age is: " + (double)sum / ages3.length);
 
 		//Question 2
 		String[] names = new String[6];
@@ -38,14 +38,14 @@ public class Week3HW {
 		for (int i = 0; i < names.length; i++) {
 			total += names[i].length();
 		}
-//			System.out.println("The avrg of letters per name is: " + total / names.length);
+			System.out.println("The avrg of letters per name is: " + total / names.length);
 		
 		//Question 2b
 		String out = "";
 		for (String name : names) {
 			out = out + name + " "; 
 		}
-	//	System.out.println(out.substring(0,out.length() - 1));
+		System.out.println(out.substring(0,out.length() - 1));
 		for (int i = 0; i < names.length; i++ ) {
 	    	out = out + names[i];
 	    if (i < names.length - 1) {
@@ -62,17 +62,13 @@ public class Week3HW {
 		for (int c = 0; c < names.length; c++) {
 			nameLengths[c] = names[c].length();
 		}
-	//	System.out.println(Arrays.toString(nameLengths));
+		System.out.println(Arrays.toString(nameLengths));
 		//Question 6
 		int totals = 0;
 		for (int l = 0; l < nameLengths.length; l++) {
 			totals += nameLengths[l];  
-	//	} System.out.println("Sum of elements: " + totals);
+		} System.out.println("Sum of elements: " + totals);
 		}	
-		boolean gotSmart = true;
-		int amntOfSleep = 4;
-		System.out.println("Am I finally done with homework? " + toFinishHomework(gotSmart, amntOfSleep));
-	}
 	
 		
 		//Question 7
